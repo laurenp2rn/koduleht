@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow Market - Bootstrap Carosel Avaleht</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            color: #000000; /* Tekstivärv */
+            background-color: #f5f5f5; /* Taustavärv */
+            background-position: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 1.4em;
+            margin: 0;
+        }
+        h1 {
+            font-size: 48px; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            color: #000000; /* Pealkirja tekstivärv */
+            text-align: center; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 50px;
+        }
+
+        nav, footer {
+            clear: both;
+            color: #ffffff; /* Menüü ja jaluse tekstivärv */
+            background-color: #ca9f86; /* Menüü ja jaluse taustavärv */
+            height: 50px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 5px 0 5px 30px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 40px;
+        }
+
+        nav li a {
+            color: #ffffff; /* Menüü lingi tekstivärv */
+        }
+
+        nav li a:hover, nav li a.current {
+            color: #ffffff; /* Menüü lingi tekstivärv hoveril */
+        }
+
+        footer {
+            font-size: 80%;
+            padding: 7px 0 0 20px;
+        }
+
+        /* Kohandatud stiil piltidele */
+        .carousel-item img {
+            max-width: 80%; /* Maksimaalne laius 80% */
+            display: block; /* Blokina */
+            margin: 0 auto; /* Keskmiseks paigutamiseks */
+        }
+
+        /* Kohandatud stiil pildi pealkirjale ja tekstile */
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5); /* Läbipaistev must taust */
+            padding: 20px; /* Sisemine polster */
+            color: #ffffff; /* Tekstivärv */
+            position: absolute; /* Absoluutne paigutus suhtes konteinerisse */
+            bottom: 0; /* Alumine serv */
+            left: 0; /* Vasak serv */
+            right: 0; /* Parempoolne serv */
+            width: auto; /* Laius automaatseks */
+            max-width: 80%; /* Maksimaalne laius 80% */
+            margin-left: auto; /* Automaatne vasak äär */
+            margin-right: auto; /* Automaatne parem äär */
+        }
+    .container.text-center h3 a {
+    color: #000000; 
+    }
+
+    </style>
+</head>
+<body>
+
+<!-- Päis -->
+<header class="header">
+    <h1 class="display-4">Meow Market</h1>
+    <!-- Menüü -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="müügivaade.html">Kitties for sale</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourstory.html">Our Story</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><strong>LOG IN</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Carousel -->
+<div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="#"><img src="images/catss.jpg" class="d-block w-100" alt="Black Cat"></a> 
+            <div class="carousel-caption">
+                <h3>Our Story</h3> 
+                <p>At Meow Market, our story is one of passion and purpose. Founded in 2024, our mission is
+                     to revolutionize the way we cherish our feline companions by fostering deep and meaningful connections between cats and humans. 
+                    Click <a href="ourstory.html">here</a> to find out more.</p> 
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="#"><img src="images/redcat.jpg" class="d-block w-100" alt="Orange Cat"></a> 
+            <div class="carousel-caption">
+                <h3>Orange Cat</h3> 
+                <p>Radiate warmth and charm with orange cats. Get yours now and brighten up your world with their vibrant personality! <a href="müügivaade.html"> Get yours now.</a></p>
+            </div>
+        </div>
+        <!-- Additional Carousel Items -->
+        <div class="carousel-item">
+            <a href="müügivaade.html"><img src="images/whitecat.jpeg" class="d-block w-100" alt="White Cat"></a> 
+            <div class="carousel-caption">
+                <h3>White Cat</h3> 
+                <p>Experience elegance and grace with white cats. Adopt yours today and discover the purity of their companionship. <a href="müügivaade.html"> Get yours now.</a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="müügivaade.html"><img src="images/calico.jpg" class="d-block w-100" alt="CALICO Cat"></a> 
+            <div class="carousel-caption">
+                <h3>Calico Cat</h3> 
+                <p>Embrace the vibrant charm of calico cats. Get yours now and add a touch of color to your life.
+                     Adopt today! <a href="müügivaade.html"> Get yours now.</a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="müügivaade.html"><img src="images/blackcat.jpg" class="d-block w-100" alt="Calico Cat"></a> 
+            <div class="carousel-caption">
+                <h3>Black Cat</h3> 
+                <p>Embrace the allure of mystery with black cats. Get yours now and add a touch of enchantment to your life. 
+                    <a href="müügivaade.html"> Get yours now.</a></p>
+            </div>
+        </div>
+        <!-- End of Additional Carousel Items -->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Eelmine</span> <!-- Previous slide button -->
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Järgmine</span> <!-- Next slide -->
+    </a>
+</div>
+<!-- Recent Posts -->
+<div class="container text-center mt-5">
+    <h2>Recent Posts</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <a href="blog.html"><img src="images/cat1.jpg" class="img-fluid" alt="Cat 1"></a>
+            <h3><a href="blog.html">Why Buy a cat</a></h3>
+            <p>Cats make wonderful pets for a variety of reasons.</p>
+        </div>
+        <div class="col-md-4">
+            <a href="blog.html"><img src="images/cat2.jpg" class="img-fluid" alt="Cat 2"></a>
+            <h3><a href="blog.html">The Fascinating Sleep Schedule</a></h3>
+            <p>Cats, with their enigmatic demeanor and graceful movements, possess a sleep
+             schedule that is both intriguing and distinct.</p>
+        </div>
+        <div class="col-md-4">
+            <a href="blog.html"><img src="images/cat3.jpg" class="img-fluid" alt="Cat 3"></a>
+            <h3><a href="blog.html">The Melodic Mystery of Cat Purring</a></h3>
+            <p>Cats have long been known for their captivating ability to produce a rhythmic, 
+            soothing sound known as purring. </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap JS ja jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

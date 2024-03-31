@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="et"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow Market - Avaleht</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            color: #000000; 
+            background-color: #f5f5f5; 
+            background-position: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 1.4em;
+            margin: 0;
+        }
+        h1 {
+            font-size: 48px; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            color: #000000; 
+            text-align: center; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 50px;
+        }
+
+        nav, footer {
+            clear: both;
+            color: #ffffff; 
+            background-color: #ca9f86; 
+            height: 50px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 5px 0 5px 30px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 40px;
+        }
+
+        nav li a {
+            color: #ffffff; 
+        }
+
+        nav li a:hover, nav li a.current {
+            color: #ffffff; 
+        }
+
+        footer {
+            font-size: 80%;
+            padding: 7px 0 0 20px;
+        }
+        .carousel-item img {
+            max-width: 80%; 
+            display: block; 
+            margin: 0 auto; 
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px; 
+            color: #ffffff; 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            width: auto; 
+            max-width: 80%; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .map-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Päis -->
+<header class="header">
+    <h1 class="display-4">Meow Market</h1>
+    <!-- Menüü -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="müügivaade.html">Kitties for sale</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourstory.html">Our Story</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"><strong>LOG IN</strong></a>
+                        </li> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Kontaktinfo ja kaart -->
+<div class="contact-info">
+    <h2>Contact Us!</h2>
+    <p>Write us <strong>meowmarket@meowmarket.ee</strong></p>
+    <p>Call us <strong>+372 123456789</strong></p>
+    <p>Visit us at Sõpruse pst 182, Tallinn, Estonia</p>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202855.9211998219!2d24.71355136425858!3d59.43696130934598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294eeb7a55c39%3A0x5dcd8cbf3ff5827a!2sS%C3%B5pruse%20pst%20182%2C%2013430%20Tallinn%2C%20Estonia!5e0!3m2!1sen!2suk!4v1646850686179!5m2!1sen!2suk" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Bootstrap JS ja jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

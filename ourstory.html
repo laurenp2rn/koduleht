@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="et"> <!-- Keele määrang - eesti -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow Market - Bootstrap Carosel Avaleht</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            color: #000000; 
+            background-color: #f5f5f5; 
+            background-position: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 1.4em;
+            margin: 0;
+        }
+        h1 {
+            font-size: 48px; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            color: #000000; 
+            text-align: center; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 50px;
+        }
+
+        nav, footer {
+            clear: both;
+            color: #ffffff; 
+            background-color: #ca9f86; 
+            height: 50px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 5px 0 5px 30px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 40px;
+        }
+
+        nav li a {
+            color: #ffffff; 
+        }
+
+        nav li a:hover, nav li a.current {
+            color: #ffffff; 
+        }
+
+        footer {
+            font-size: 80%;
+            padding: 7px 0 0 20px;
+        }
+        .carousel-item img {
+            max-width: 80%; 
+            display: block; 
+            margin: 0 auto; 
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px; 
+            color: #ffffff; 
+            position: absolute; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            width: auto; 
+            max-width: 80%;
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+    </style>
+</head>
+<body>
+
+<!-- Päis -->
+<header class="header">
+    <h1 class="display-4">Meow Market</h1>
+    <!-- Menüü -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="müügivaade.html">Kitties for sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ourstory.html">Our Story</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"><strong>LOG IN</strong></a>
+                        </li> 
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Meow Market Story -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <h2>Our Story</h2>
+            <p>In the radiant glow of a new dawn in 2024, Meow Market emerged, not just as a business venture, but as a heartfelt mission to revolutionize the way we cherish our feline companions. Founded by Lauren, an ardent cat lover, Meow Market was more than just a pet store—it was a sanctuary, a beacon of love and compassion for all things feline.</p>
+            <p>Driven by a singular mission, Lauren envisioned Meow Market as a place where cats and their humans could thrive together, fostering a community bound by their shared love for whiskers and purrs. From the very beginning, the company set out to accomplish something remarkable—to create a space where every cat was valued, every customer was cherished, and every interaction was infused with warmth and empathy.</p>
+            <p>At Meow Market, our mission transcends mere commerce. We strive to nurture deep and meaningful connections between cats and humans, recognizing the profound impact these relationships have on our lives. From providing high-quality products and expert advice to offering support and guidance for new cat parents, we are committed to being a trusted partner on every step of the feline journey.</p>
+            <p>But our mission goes beyond the walls of our shop. We are dedicated to making a positive difference in the lives of cats in need, partnering with local shelters and rescue organizations to promote adoption, support spaying and neutering initiatives, and provide care and comfort to homeless and abandoned cats.</p>
+            <p>As the sun sets on each day at Meow Market, we reflect on the progress we've made and the lives we've touched. But our work is far from over. With every whisker we stroke and every meow we hear, we are reminded of our purpose—to create a world where every cat is valued, every home is filled with love, and every heart is touched by the magic of feline companionship.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
